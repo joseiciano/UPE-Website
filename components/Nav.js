@@ -1,12 +1,11 @@
-import {useState} from "react";
-import styled from 'styled-components'
+import { useState } from "react";
+import styled from "styled-components";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <Image src='/public/UPE_Logo.png' alt="UPE Logo">
-      </Image>
+      <Image src="/Images/UPE_Logo.png" alt="UPE Logo" />
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
@@ -25,7 +24,6 @@ const Navbar = () => {
 
 export default Navbar;
 
-
 const MenuLink = styled.a`
   padding: 1rem 2rem;
   cursor: pointer;
@@ -33,10 +31,10 @@ const MenuLink = styled.a`
   text-decoration: none;
   color: white;
   transition: all 0.3s ease-in;
-  font-size: 1.2rem;
-  &:hover {
-    color: orange;/*#dbdbdb;#fbe6c2;*/
-  }
+  font-size: 1.5rem;
+  // &:hover {
+  //   color: orange;
+  // }
 `;
 
 const Nav = styled.div`
@@ -45,11 +43,17 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: gold;
-  position: absolute;
+  
+  background: linear-gradient(
+    90deg,
+    rgba(254, 254, 0),
+    rgba(255, 151, 0)
+  );
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
+  margin: 0;
 `;
 
 const Menu = styled.div`
@@ -57,7 +61,7 @@ const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  @media (max-width: 870px) {
+  @media (max-width: 1196px) {
     overflow: hidden;
     flex-direction: column;
     max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
@@ -77,10 +81,10 @@ const Hamburger = styled.div`
     margin-bottom: 4px;
     border-radius: 5px;
   }
-  @media (max-width: 870px) {
+  @media (max-width: 1196px) {
     display: flex;
   }
 `;
 const Image = styled.img`
-padding: 1rem 1rem;
+  padding: 1rem 1rem;
 `;
