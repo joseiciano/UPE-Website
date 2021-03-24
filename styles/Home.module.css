@@ -6,6 +6,16 @@
   justify-content: center;
   align-items: center;
 }
+.center {
+  text-align: center;
+}
+
+.btn {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 
 .main {
   padding: 5rem 0;
@@ -14,6 +24,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.d {
+  line-height: 2cm;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .footer {
@@ -50,6 +76,21 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+}
+
+.sponserTitle {
+  font-weight: bold;
+  font-size: 4rem;
+  color: #fa853f;
+  text-align: center;
+  line-height: 50px;
+}
+.sponserMsg {
+  font-size: 2rem;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  line-height: 80px;
 }
 
 .title,
@@ -111,7 +152,21 @@
 }
 
 .logo {
-  height: 1em;
+  height: 2.7em;
+}
+.gridcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  background-color: white;
+  padding: 1px;
+  grid-column-gap: 50px;
+  grid-row-gap: 0.5cm;
+}
+.griditem {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5px;
+  font-size: 15px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
