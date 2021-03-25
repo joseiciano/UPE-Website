@@ -1,7 +1,7 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Image from "next/image";
-const page1 = () => {
+const HomepageContainer1 = () => {
   return (
     <Main>
       <Container1>
@@ -33,8 +33,8 @@ const page1 = () => {
       >
         <defs>
           <linearGradient id="myGradient" gradientTransform="rotate(0)">
-            <stop offset="2%" stop-color="rgba(254, 254, 0)" />
-            <stop offset="92%" stop-color=" rgba(255, 151, 0)" />
+            <stop offset="2%" stopColor="rgba(254, 254, 0)" />
+            <stop offset="92%" stopColor=" rgba(255, 151, 0)" />
           </linearGradient>
         </defs>
         <path
@@ -42,46 +42,11 @@ const page1 = () => {
           style={{ stroke: "none", fill: "url('#myGradient')" }}
         ></path>
       </svg>
-      <Container2>
-        <TextContainer>
-          <Header primary>About Us</Header>
-
-          <Text primary>
-            Upsilon Pi Epsilon (UPE) is the largest student organization for
-            technology at florida international University (FIU). Our mission is
-            to provide students of all academic backgrounds and skill levels who
-            are interested in technology. By joining the organisation, students
-            can participate in our program, enjoy many benifits, and become part
-            of the tech community at FIU!
-          </Text>
-
-          <Text primary>
-            UPE is supported by FIU's college of engineering & Computing and is
-            sponsored by top companies from all industries. Our organisation has
-            been recognized both locally and nationally, named "Outstanding
-            Engineering organization" by FIU and "Outstanding Chapter" by the
-            UPE National Concil.
-          </Text>
-
-          <ButtonContainer>
-            <Button primary>Network</Button> <Button primary>Gallery</Button>
-          </ButtonContainer>
-        </TextContainer>
-        <ImgContainer>
-          <Image
-            src="/Images/White_1-05.png"
-            alt="Picture of the author"
-            width={384}
-            height={384}
-            padding={90}
-          />
-        </ImgContainer>
-      </Container2>
     </Main>
   );
 };
 
-export default page1;
+export default HomepageContainer1;
 
 const Main = styled.div`
   display: flex;
@@ -127,12 +92,6 @@ const Header = styled.h1`
   text-aling: center;
   text-transform: none;
   text-align: center;
-  ${(props) =>
-    props.primary &&
-    css`
-      color: rgb(255, 151, 0);
-      margin: 2rem 0 0 0;
-    `}
 `;
 const ImgContainer = styled.div`
   width: auto;
@@ -153,17 +112,9 @@ const Button = styled.button`
   font-weight: 900;
   font-size: 26px;
   background: white;
-  padding: 10px 37px 10px 37px;
+  padding: 8px 43px 8px 43px;
   text-decoration: none;
   border: none;
-
-  ${(props) =>
-    props.primary &&
-    css`
-      color: white;
-      background: rgb(255, 215, 0);
-      background: linear-gradient(90deg, rgba(254, 254, 0), rgba(255, 151, 0));
-    `}
 `;
 const Text = styled.p`
   background: transparent;
@@ -176,13 +127,4 @@ const Text = styled.p`
   color: white;
   display: block;
   margin: 0 2em 0 2em;
-
-  ${(props) =>
-    props.primary &&
-    css`
-      color: black;
-      margin: 10px 0 0 0;
-      text-align: justify;
-      font-size: 16px;
-    `}
 `;

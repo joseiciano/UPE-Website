@@ -29,12 +29,11 @@ const MenuLink = styled.a`
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: white;
   transition: all 0.3s ease-in;
   font-size: 1.5rem;
-  // &:hover {
-  //   color: orange;
-  // }
 `;
 
 const Nav = styled.div`
