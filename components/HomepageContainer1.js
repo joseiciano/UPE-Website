@@ -64,17 +64,6 @@ const Container1 = styled.div`
   align-item: baseline;
   padding: 50px 0px 60px 0;
 `;
-const Container2 = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap-reverse;
-  justify-content: space-around;
-  background: white;
-  padding: 135px 0px 180px 0;
-  @media (max-width: 917px) {
-    flex-wrap: reverse-wrap;
-  }
-`;
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;

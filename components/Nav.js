@@ -42,12 +42,8 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  
-  background: linear-gradient(
-    90deg,
-    rgba(254, 254, 0),
-    rgba(255, 151, 0)
-  );
+
+  background: linear-gradient(90deg, rgba(254, 254, 0), rgba(255, 151, 0));
   position: relative;
   top: 0;
   left: 0;
