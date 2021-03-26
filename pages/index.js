@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Nav from '../components/Nav'
-import Page1 from '../components/Page1'
+import HomepageContainer1 from '../components/HomepageContainer1'
 
 export default function Home() {
   return (
-    <div style={{padding:'0px', margin: '0px'}}>
+    <div>
     <Nav />
-    <Page1/>
+    <HomepageContainer1/>
     </div>
   )
 }
