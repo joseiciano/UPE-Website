@@ -1,7 +1,9 @@
-import Head from 'next/head'
-import Benefits from '../components/Benefits'
-import UpcomingEvents from '../components/UpcomingEvents'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Benefits from "../components/Benefits";
+import UpcomingEvents from "../components/UpcomingEvents";
+import styles from "../styles/Home.module.css";
+import Nav from "../components/Nav";
+import HomepageContainer1 from "../components/HomepageContainer1";
 
 export default function Home() {
   return (
@@ -12,8 +14,11 @@ export default function Home() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
       </Head>
 
+      <Nav />
+      <HomepageContainer1 />
+
       <Benefits></Benefits>
       <UpcomingEvents></UpcomingEvents>
     </div>
-  )
+  );
 }
