@@ -33,8 +33,8 @@ const HomepageContainer1 = () => {
       >
         <defs>
           <linearGradient id="myGradient" gradientTransform="rotate(0)">
-            <stop offset="2%" stop-color="rgba(254, 254, 0)" />
-            <stop offset="92%" stop-color=" rgba(255, 151, 0)" />
+            <stop offset="2%" stopColor="rgba(254, 254, 0)" />
+            <stop offset="92%" stopColor=" rgba(255, 151, 0)" />
           </linearGradient>
         </defs>
         <path
