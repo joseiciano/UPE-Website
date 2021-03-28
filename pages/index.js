@@ -4,6 +4,7 @@ import UpcomingEvents from "../components/UpcomingEvents";
 import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
 import HomepageContainer1 from "../components/HomepageContainer1";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -11,7 +12,10 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins"
+        />
       </Head>
 
       <Nav />
@@ -19,6 +23,7 @@ export default function Home() {
 
       <Benefits></Benefits>
       <UpcomingEvents></UpcomingEvents>
+      <Footer />
     </div>
   );
 }

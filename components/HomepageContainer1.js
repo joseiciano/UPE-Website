@@ -7,10 +7,10 @@ const HomepageContainer1 = () => {
       <Container1>
         <ImgContainer>
           <Image
-            src="/Images/White_1-05.png"
-            alt="Picture of the author"
-            width={384}
-            height={384}
+            src="/Images/Image_1.png"
+            alt="Image_1"
+            width={500}
+            height={500}
             style={{ background: "transparent", margin: "50px 0 0 0" }}
           />
         </ImgContainer>
