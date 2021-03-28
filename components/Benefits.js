@@ -5,7 +5,7 @@ const Benefits = () => {
     return (
         <Grid>
             <RightGrid>
-                <img src="http://pngimg.com/uploads/cat/cat_PNG50514.png" width='300' height='300'></img>
+                <img src="benefits.png" width='550' height='550'></img>
             </RightGrid>
             <LeftGrid>
                 <H1>Our Benefits</H1>
@@ -30,7 +30,9 @@ const Benefits = () => {
                     <Benefit>MEMBER EVENTS</Benefit>
                 </Item>
 
-                <Button href='/application'>Membership Application</Button>
+                <Button>
+                    <a href='https://airtable.com/shr6SZvMXBGvPPrge'>Membership Application</a>
+                </Button>
             </LeftGrid>
         </Grid>
     )
@@ -44,7 +46,7 @@ const Grid = styled.div`
 `;
 
 const LeftGrid = styled.div`
-    margin-left: 250px;
+    margin-left: 50px;
     padding: 0 20px;
     justify-content: center;
 `;
