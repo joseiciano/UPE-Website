@@ -7,12 +7,14 @@ const Event = ({name, date, location, description, image}) => {
                 <Info>
                     <Location>{location}</Location>
                     <Description>{description}</Description>
-                    <RsvpBtn>RSVP Here</RsvpBtn>
+                    <RsvpBtn>
+                        <a href="">RSVP Here</a>
+                    </RsvpBtn>
                 </Info> 
            </Card>
            <Title>
                 <Name>{name}</Name>
-                <p>{date}</p>
+                <p style ={{marginTop: "10px"}}>{date}</p>
            </Title>
         </div>
     )
@@ -35,7 +37,7 @@ const Info = styled.div`
 const Card = styled.div`
     border: 2px solid #11FFBD;
     border-radius: 10%;
-    width: 250px;
+    width: 300px;
     height: 200px;
     position: relative;
     background-image:  url("${(props) => props.imageSource}");
@@ -83,4 +85,5 @@ const Title = styled.div`
 
 const Name = styled.h4`
     font-weight: 800;
+    margin-bottom: 0px;
 `;
