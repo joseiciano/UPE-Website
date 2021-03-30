@@ -6,18 +6,26 @@ import Carousel, {consts} from 'react-elastic-carousel';
 const UpcomingEvents = () => {
    
     const myArrow = ({ type, onClick, isEdge }) => {
-        const pointer = type === consts.PREV ? <FaCaretLeft color={'#F7981D'} size={'4em'} cursor={'pointer'} /> :  <FaCaretRight color={'#F7981D'} size={'4em'} cursor={'pointer'} />;
+        const pointer = type === consts.PREV ? <FaCaretLeft color={'#F7981D'} size={'4em'} cursor={'pointer'}/> :  <FaCaretRight color={'#F7981D'} size={'4em'} cursor={'pointer'} />;
         return (
-            <div style={{paddingTop: '12vh'}} onClick={onClick} disabled={isEdge}>
+            <Arrow onClick={onClick} disabled={isEdge}>
                 {pointer}
-            </div>
+            </Arrow>
         );
     }
+
+    const breakPoints = [
+        { width: 1, itemsToShow: 1, pagination: false},
+        { width: 650, itemsToShow: 2, pagination: false },
+        { width: 1000, itemsToShow: 3, pagination: false },
+        { width: 1300, itemsToShow: 4, pagination: false},
+        { width: 1600, itemsToShow: 5, pagination: false},
+      ]
 
     return (
         <div style={{width: "100%"}}>
             <H1>Upcoming Events</H1>
-            <Carousel renderArrow={myArrow} itemsToShow={3} renderPagination={ () => {return (<div display={'none'}></div>)} }>
+            <Carousel renderArrow={myArrow} breakPoints={breakPoints}>
              
                 <Event 
                     name={'Event Name 1'} 
@@ -43,6 +51,12 @@ const UpcomingEvents = () => {
                     location={'6:00 PM | PG6 112'}
                     description={'Create a portfolio site from scratch using HTML/CSS/JS'}
                     image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}/>
+                <Event 
+                    name={'Event Name 5'} 
+                    date={'Today'}
+                    location={'6:00 PM | PG6 112'}
+                    description={'Create a portfolio site from scratch using HTML/CSS/JS'}
+                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}/>
 
             </Carousel>
         </div>
@@ -59,8 +73,9 @@ const H1 = styled.h1`
     font-family: ‘Poppins’, sans-serif;
 `;
 
-const Grid = styled.div`
-    display: grid;
-    grid-column-gap: 50px;
-    grid-template-columns: auto auto auto auto auto;
+const Arrow = styled.div`
+    padding-top: 8vh;
+    @media only screen and (max-width: 500px) {
+        padding-top: 3vh;
+    }
 `;

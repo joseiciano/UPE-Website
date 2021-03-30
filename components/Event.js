@@ -32,6 +32,9 @@ const Info = styled.div`
     border-radius: 9%;
     padding: 20px 5px;
     background-color: rgba(17,255,189, 0.85);
+    @media only screen and (max-width: 500px) {
+        padding: 5px;
+    }
 `;
 
 const Card = styled.div`
@@ -46,6 +49,10 @@ const Card = styled.div`
             opacity: 1;
         }
     }
+    @media only screen and (max-width: 500px) {
+        width: 150px;
+        height: 100px;
+    }
 `;
 
 const Location = styled.div`
@@ -54,6 +61,10 @@ const Location = styled.div`
     font-size: 24px;
     font-weight: 600;
     font-family: ‘Poppins’, sans-serif;
+    @media only screen and (max-width: 500px) {
+        font-size: 12px;
+        margin-top: 0px;
+    }
 `;
 
 const Description = styled.div`
@@ -61,6 +72,11 @@ const Description = styled.div`
     color: white;
     font-weight: 100;
     font-family: ‘Poppins’, sans-serif;
+    @media only screen and (max-width: 500px) {
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
 `;
 
 const RsvpBtn = styled.button`
@@ -77,10 +93,17 @@ const RsvpBtn = styled.button`
     border-bottom-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    @media only screen and (max-width: 500px) {
+        font-size: 8px;
+        padding: 5px 30px;
+    }
 `;
 const Title = styled.div`
     text-align: center;
     font-family: ‘Poppins’, sans-serif;
+    @media only screen and (max-width: 500px) {
+        font-size: 12px;
+    }
 `;
 
 const Name = styled.h4`
