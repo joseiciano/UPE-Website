@@ -5,7 +5,7 @@ const Benefits = () => {
     return (
         <Grid>
             <LeftGrid>
-                <img class="image" src="benefits.png" width='550' height='550'></img>
+                <img className="image" src="benefits.png" width='550' height='550'></img>
             </LeftGrid>
             <RightGrid>
                 <H1>Our Benefits</H1>
