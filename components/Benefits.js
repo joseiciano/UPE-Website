@@ -4,10 +4,10 @@ import { FaGraduationCap, FaAward, FaBookmark, FaCrown, FaUserFriends } from "re
 const Benefits = () => {
     return (
         <Grid>
-            <RightGrid>
-                <img src="benefits.png" width='550' height='550'></img>
-            </RightGrid>
             <LeftGrid>
+                <img className="image" src="benefits.png" width='550' height='550'></img>
+            </LeftGrid>
+            <RightGrid>
                 <H1>Our Benefits</H1>
                 <Item>
                     <Icon><FaGraduationCap color={'white'}></FaGraduationCap></Icon>
@@ -33,7 +33,7 @@ const Benefits = () => {
                 <Button>
                     <a href='https://airtable.com/shr6SZvMXBGvPPrge'>Membership Application</a>
                 </Button>
-            </LeftGrid>
+            </RightGrid>
         </Grid>
     )
 }
@@ -43,15 +43,28 @@ export default Benefits
 const Grid = styled.div`
     display: grid;
     grid-template-columns: auto auto;
-`;
-
-const LeftGrid = styled.div`
-    margin-left: 50px;
-    padding: 0 20px;
-    justify-content: center;
+    @media only screen and (max-width: 900px) {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    @media only screen and (max-width: 550px) {
+        .image {
+            width: 100%;
+            height: auto;
+        }
+    }
 `;
 
 const RightGrid = styled.div`
+    margin-left: 50px;
+    padding: 0 20px;
+    justify-content: center;
+    @media only screen and (max-width: 550px) {
+        margin-left: 5px;
+    }
+`;
+
+const LeftGrid = styled.div`
 
 `;
 
