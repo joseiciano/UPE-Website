@@ -83,14 +83,14 @@
   font-size: 4rem;
   color: #fa853f;
   text-align: center;
-  line-height: 50px;
+  line-height: 3.125rem;
 }
 .sponserMsg {
   font-size: 2rem;
   color: black;
   font-weight: 400;
   text-align: center;
-  line-height: 80px;
+  line-height: 5rem;
 }
 
 .title,
@@ -117,8 +117,9 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1200px;
   margin-top: 3rem;
+  box-sizing: border-box;
 }
 
 .card {
@@ -152,20 +153,23 @@
 }
 
 .logo {
-  height: 2.7em;
+  height: 2.7rem;
 }
 .gridcontainer {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(250px,2fr));
   background-color: white;
-  padding: 1px;
-  grid-column-gap: 50px;
-  grid-row-gap: 0.5cm;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: center;
+  padding: 0.063rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 1rem;
 }
 .griditem {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 1.5px;
-  font-size: 15px;
+  padding: 0.094rem;
+  font-size: 0.094rem;
   text-align: center;
 }
 
