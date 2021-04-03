@@ -15,7 +15,7 @@ const HomepageContainer1 = () => {
           />
         </ImgContainer>
         <TextContainer>
-          <Header>Join Mmiami's leading tech student community</Header>
+          <Header>Join Miami's leading tech student community</Header>
           <Text>
             Providing students of all academic backgrounds and skill levels with
             opportunities to develope technecally and professionally
@@ -33,8 +33,9 @@ const HomepageContainer1 = () => {
       >
         <defs>
           <linearGradient id="myGradient" gradientTransform="rotate(0)">
-            <stop offset="2%" stopColor="rgba(254, 254, 0)" />
-            <stop offset="92%" stopColor=" rgba(255, 151, 0)" />
+            <stop offset="22%" stopColor="rgba(255,215,0,1)" />
+            <stop offset="44%" stopColor=" rgba(255,187,0,1)" />
+            <stop offset="70%" stopColor=" rgba(255,165,0,1)" />
           </linearGradient>
         </defs>
         <path
@@ -60,7 +61,12 @@ const Container1 = styled.div`
   flex-flow: wrap;
   justify-content: space-around;
   background: rgb(255, 215, 0);
-  background: linear-gradient(90deg, rgba(254, 254, 0), rgba(255, 151, 0));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 215, 0, 1) 22%,
+    rgba(255, 187, 0, 1) 48%,
+    rgba(255, 165, 0, 1) 77%
+  );
   align-item: baseline;
   padding: 50px 0px 60px 0;
 `;
@@ -78,7 +84,6 @@ const Header = styled.h1`
   font-weight: 900;
   height: "50px";
   font-family: "Poppins", sans-serif;
-  text-aling: center;
   text-transform: none;
   text-align: center;
 `;

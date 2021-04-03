@@ -1,13 +1,15 @@
 import styled, { css } from "styled-components";
-import { FaTwitter } from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
+import { TiSocialInstagram } from "react-icons/ti";
 import {
   RiDiscordLine,
   RiFacebookBoxLine,
   RiMessage2Fill,
 } from "react-icons/ri";
-import { AiOutlineLinkedin, AiFillPhone } from "react-icons/ai";
-
+import {
+  AiOutlineLinkedin,
+  AiFillPhone,
+  AiFillTwitterSquare,
+} from "react-icons/ai";
 const Footer = () => {
   return (
     <Main>
@@ -18,8 +20,9 @@ const Footer = () => {
       >
         <defs>
           <linearGradient id="Gradient" gradientTransform="rotate(0)">
-            <stop offset="1%" stopColor="rgba(254, 254, 0)" />
-            <stop offset="99%" stopColor=" rgba(255, 151, 0)" />
+            <stop offset="22%" stopColor="rgba(255,215,0,1)" />
+            <stop offset="48%" stopColor=" rgba(255,187,0,1)" />
+            <stop offset="77%" stopColor=" rgba(255,165,0,1)" />
           </linearGradient>
         </defs>
         <path
@@ -31,30 +34,38 @@ const Footer = () => {
         <Header>Join The Community!</Header>
         <IconContainer>
           <Icon>
-            <RiDiscordLine color={"white"} size={90} />
+            <RiDiscordLine
+              style={{ color: "white", height: "130%", width: "130%" }}
+            />
           </Icon>
           <Icon>
-            <RiFacebookBoxLine color={"white"} size={90} />
+            <RiFacebookBoxLine
+              style={{ color: "white", height: "130%", width: "130%" }}
+            />
           </Icon>
           <Icon>
-            {" "}
-            <GrInstagram color={"white"} size={90} />
+            <TiSocialInstagram
+              style={{ color: "white", height: "130%", width: "130%" }}
+            />
           </Icon>
           <Icon>
-            {" "}
-            <FaTwitter color={"white"} size={90} />
+            <AiFillTwitterSquare
+              style={{ color: "white", height: "130%", width: "130%" }}
+            />
           </Icon>
           <Icon>
-            <AiOutlineLinkedin color={"white"} size={90} />
+            <AiOutlineLinkedin
+              style={{ color: "white", height: "130%", width: "130%" }}
+            />
           </Icon>
         </IconContainer>
         <Bottom>
           <Header Bottom>@Copyright - Uplison Pi Eplison at FIU </Header>
           <IconContainer>
-            <Icon>
+            <Icon Bottom>
               <RiMessage2Fill color={"white"} size={20} />
             </Icon>
-            <Icon>
+            <Icon Bottom>
               <AiFillPhone color={"white"} size={20} />
             </Icon>
           </IconContainer>
@@ -67,12 +78,19 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.div`
-  background: linear-gradient(90deg, rgba(254, 254, 0), rgba(255, 151, 0));
+  background: rgb(255, 215, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 215, 0, 1) 22%,
+    rgba(255, 187, 0, 1) 48%,
+    rgba(255, 165, 0, 1) 77%
+  );
 `;
 const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background: transparent;
 `;
 const Bottom = styled.div`
@@ -81,7 +99,18 @@ const Bottom = styled.div`
   padding: 80px 0 0 0;
 `;
 const Icon = styled.div`
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
+  width: 90px;
+  height: 90px;
+  ${(props) =>
+    props.Bottom &&
+    css`
+      width: 50px;
+      height: 50px;
+    `}
 `;
 const Main = styled.div`
   display: flex;
@@ -90,16 +119,15 @@ const Main = styled.div`
 const Header = styled.h1`
   color: white;
   font-weight: 900;
-  font-size: 45px;
+  font-size: 2rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  padding: 40px 0 20px 0;
-  margin: 0px;
+  margin-bottom: 5px;
   ${(props) =>
     props.Bottom &&
     css`
       font-weight: 100;
       font-size: 13px;
-      padding: 25px 0 0 0;
+      padding: 1rem 0 1rem 1.5rem;
     `}
 `;

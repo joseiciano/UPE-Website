@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
 import HomepageContainer1 from "../components/HomepageContainer1";
 import Footer from "../components/Footer";
+import Network from "../components/Network";
 
 export default function Home() {
   return (
@@ -20,9 +21,9 @@ export default function Home() {
 
       <Nav />
       <HomepageContainer1 />
-
       <Benefits></Benefits>
       <UpcomingEvents></UpcomingEvents>
+      <Network />
       <Footer />
     </div>
   );
