@@ -1,10 +1,10 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Nav>
+    <Nav stcolor={props.stcolor} ndcolor={props.ndcolor}>
       <Image src="/Images/UPE_Logo.png" alt="UPE Logo" />
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
@@ -40,7 +40,7 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: linear-gradient(90deg, rgba(254, 254, 0), rgba(255, 151, 0));
+  background: linear-gradient(90deg, ${props => props.stcolor}, ${props => props.ndcolor});
   position: relative;
   top: 0;
   left: 0;

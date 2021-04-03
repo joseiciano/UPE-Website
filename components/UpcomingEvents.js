@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
 import Carousel, {consts} from 'react-elastic-carousel';
 
-const UpcomingEvents = () => {
-   
+const UpcomingEvents = (props) => {
     const myArrow = ({ type, onClick, isEdge }) => {
-        const pointer = type === consts.PREV ? <FaCaretLeft color={'#F7981D'} size={'4em'} cursor={'pointer'}/> :  <FaCaretRight color={'#F7981D'} size={'4em'} cursor={'pointer'} />;
+        const pointer = type === consts.PREV ? <FaCaretLeft color={props.ndcolor} size={'4em'} cursor={'pointer'}/> :  <FaCaretRight color={props.ndcolor} size={'4em'} cursor={'pointer'} />;
         return (
             <Arrow onClick={onClick} disabled={isEdge}>
                 {pointer}
@@ -24,7 +23,7 @@ const UpcomingEvents = () => {
 
     return (
         <div style={{width: "100%"}}>
-            <H1>Upcoming Events</H1>
+            <H1 ndcolor={props.ndcolor}>Upcoming Events</H1>
             <Carousel renderArrow={myArrow} breakPoints={breakPoints}>
              
                 <Event 
@@ -32,31 +31,41 @@ const UpcomingEvents = () => {
                     date={'Today'}
                     location={'6:00 PM | PG6 112'}
                     description={'Create a portfolio site from scratch using HTML/CSS/JS'}
-                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}/>
+                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}
+                    ndcolor={props.ndcolor}
+                    temp={props.temp}/>
                 <Event 
                     name={'Event Name 2'} 
                     date={'Thursday, September 20 2020'}
                     location={'6:00 PM | PG6 112'}
                     description={'Create a portfolio site from scratch using HTML/CSS/JS'}
-                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}/>
+                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}
+                    ndcolor={props.ndcolor}
+                    temp={props.temp}/>
                 <Event 
                     name={'Event Name 3'} 
                     date={'Today'}
                     location={'6:00 PM | PG6 112'}
                     description={'Create a portfolio site from scratch using HTML/CSS/JS'}
-                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}/>
+                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}
+                    ndcolor={props.ndcolor}
+                    temp={props.temp}/>
                 <Event 
                     name={'Event Name 4'} 
                     date={'Today'}
                     location={'6:00 PM | PG6 112'}
                     description={'Create a portfolio site from scratch using HTML/CSS/JS'}
-                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}/>
+                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}
+                    ndcolor={props.ndcolor}
+                    temp={props.temp}/>
                 <Event 
                     name={'Event Name 5'} 
                     date={'Today'}
                     location={'6:00 PM | PG6 112'}
                     description={'Create a portfolio site from scratch using HTML/CSS/JS'}
-                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}/>
+                    image={'http://pngimg.com/uploads/cat/cat_PNG50514.png'}
+                    ndcolor={props.ndcolor}
+                    temp={props.temp}/>
 
             </Carousel>
         </div>
@@ -67,7 +76,7 @@ export default UpcomingEvents
 
 const H1 = styled.h1`
     text-align: center;
-    color: #F7981D;
+    color: ${props => props.ndcolor};
     font-weight: 900;
     font-size: 34px;
     font-family: ‘Poppins’, sans-serif;
