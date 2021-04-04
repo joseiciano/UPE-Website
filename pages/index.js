@@ -4,6 +4,7 @@ import UpcomingEvents from "../components/UpcomingEvents";
 import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
 import HomepageContainer1 from "../components/HomepageContainer1";
+import Advance from "./advance";
 import Footer from "../components/Footer";
 import Network from "../components/Network";
 
@@ -19,11 +20,12 @@ export default function Home() {
         />
       </Head>
 
-      <Nav />
+      <Nav/>
       <HomepageContainer1 />
       <Benefits></Benefits>
-      <UpcomingEvents></UpcomingEvents>
+      <UpcomingEvents ndcolor={"#F7981D"} temp="rgba(255, 151, 0, 0.85)"></UpcomingEvents>
       <Footer />
+      <Advance></Advance>
     </div>
   );
 }

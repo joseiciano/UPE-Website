@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-const Event = ({name, date, location, description, image}) => {
+const Event = ({name, date, location, description, image, ndcolor, temp}) => {
     return (
         <div>
-           <Card imageSource={image}> 
-                <Info>
+           <Card imageSource={"event_img.png"} ndcolor={ndcolor}> 
+                <Info temp={temp}>
                     <Location>{location}</Location>
                     <Description>{description}</Description>
-                    <RsvpBtn>
-                        <a href="">RSVP Here</a>
+                    <RsvpBtn ndcolor={ndcolor}>
+                        <a href="https://go.fiu.edu/upersvp">RSVP Here</a>
                     </RsvpBtn>
                 </Info> 
            </Card>
@@ -31,19 +31,21 @@ const Info = styled.div`
     height: 100%;
     border-radius: 9%;
     padding: 20px 5px;
-    background-color: rgba(17,255,189, 0.85);
+    background-color: ${props => props.temp}; 
     @media only screen and (max-width: 500px) {
         padding: 5px;
     }
 `;
 
 const Card = styled.div`
-    border: 2px solid #11FFBD;
+    border: 2px solid ${props => props.ndcolor};
     border-radius: 10%;
     width: 300px;
     height: 200px;
     position: relative;
     background-image:  url("${(props) => props.imageSource}");
+    background-repeat: no-repeat;
+    background-size: cover;
     &:hover { 
         ${Info} {
             opacity: 1;
@@ -81,7 +83,7 @@ const Description = styled.div`
 
 const RsvpBtn = styled.button`
     cursor: pointer;
-    color: #11FFBD;
+    color: ${props => props.ndcolor};
     background-color: white;
     border: none;
     text-align: center;

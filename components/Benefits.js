@@ -46,8 +46,6 @@ const Grid = styled.div`
     @media only screen and (max-width: 900px) {
         display: grid;
         grid-template-columns: auto;
-    }
-    @media only screen and (max-width: 550px) {
         .image {
             width: 100%;
             height: auto;
