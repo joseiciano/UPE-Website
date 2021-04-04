@@ -2,7 +2,11 @@ html,
 body {
   padding: 0;
   margin: 0;
+<<<<<<< HEAD
   font-family: Poppins;
+=======
+  font-family: "Poppins", sans-serif;
+>>>>>>> aad0cfe24aea0cca543d90f3012a27f3e8430c2b
 }
 
 
