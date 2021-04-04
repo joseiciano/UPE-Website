@@ -3,12 +3,12 @@ import styled from 'styled-components';
 const Event = ({name, date, location, description, image, ndcolor, temp}) => {
     return (
         <div>
-           <Card imageSource={image} ndcolor={ndcolor}> 
+           <Card imageSource={"event_img.png"} ndcolor={ndcolor}> 
                 <Info temp={temp}>
                     <Location>{location}</Location>
                     <Description>{description}</Description>
                     <RsvpBtn ndcolor={ndcolor}>
-                        <a href="">RSVP Here</a>
+                        <a href="https://go.fiu.edu/upersvp">RSVP Here</a>
                     </RsvpBtn>
                 </Info> 
            </Card>
@@ -45,7 +45,7 @@ const Card = styled.div`
     position: relative;
     background-image:  url("${(props) => props.imageSource}");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     &:hover { 
         ${Info} {
             opacity: 1;
