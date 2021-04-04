@@ -25,13 +25,16 @@ const Navbar = () => {
 export default Navbar;
 
 const MenuLink = styled.a`
-  padding: 1rem 2rem;
+  padding: 1rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   color: white;
   transition: all 0.3s ease-in;
   font-size: 1.5rem;
+  @media (max-width: 1162px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Nav = styled.div`
@@ -40,7 +43,13 @@ const Nav = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: linear-gradient(90deg, rgba(254, 254, 0), rgba(255, 151, 0));
+  background: rgb(255, 215, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 215, 0, 1) 22%,
+    rgba(255, 187, 0, 1) 48%,
+    rgba(255, 165, 0, 1) 77%
+  );
   position: relative;
   top: 0;
   left: 0;
@@ -53,7 +62,7 @@ const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  @media (max-width: 1196px) {
+  @media (max-width: 1162px) {
     overflow: hidden;
     flex-direction: column;
     max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
@@ -67,13 +76,13 @@ const Hamburger = styled.div`
   flex-direction: column;
   cursor: pointer;
   span {
-    height: 2px;
-    width: 25px;
+    height: 6px;
+    width: 40px;
     background: white;
     margin-bottom: 4px;
     border-radius: 5px;
   }
-  @media (max-width: 1196px) {
+  @media (max-width: 1162px) {
     display: flex;
   }
 `;
