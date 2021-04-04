@@ -50,9 +50,9 @@ const Advance = () => {
         <About>
             <Left>
                 <H1>About Advance</H1>
-                <p>
+                <AboutText>
                 UPE Advance teaches students career development knowledge and skills through interactive workshops and activities. These take place every two weeks for about an hour and are led by the program committee, faculty, or corporate sponsors. Other activities such as the interview prep sessions take place every week, and employer events can happen at any time.
-                </p>
+                </AboutText>
             </Left>
             <Right>
                 <img className="image" src="benefits.png" width='550' height='550'></img>
@@ -139,8 +139,6 @@ const About = styled.div`
     @media only screen and (max-width: 900px) {
         display: grid;
         grid-template-columns: auto;
-    }
-    @media only screen and (max-width: 550px) {
         .image {
             width: 100%;
             height: auto;
@@ -154,6 +152,11 @@ const H1 = styled.h1`
     font-weight: 900;
     font-size: 34px;
     font-family: ‘Poppins’, sans-serif;
+`;
+
+const AboutText = styled.p`
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
 `;
 
 const Left = styled.div`

@@ -44,6 +44,7 @@ const Card = styled.div`
     height: 200px;
     position: relative;
     background-image:  url("${(props) => props.imageSource}");
+    background-size: cover;
     &:hover { 
         ${Info} {
             opacity: 1;
