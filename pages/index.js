@@ -23,7 +23,6 @@ export default function Home() {
       <HomepageContainer1 />
       <Benefits></Benefits>
       <UpcomingEvents></UpcomingEvents>
-      <Network />
       <Footer />
     </div>
   );

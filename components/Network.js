@@ -139,6 +139,7 @@ const Main = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 40px 0 40px 0;
 `;
 const Container = styled.div`
   display: flex;
