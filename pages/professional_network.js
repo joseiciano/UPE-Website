@@ -1,10 +1,13 @@
-import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-const HomepageContainer1 = () => {
+import Network from "../components/Network";
+import Footer from "../components/Footer";
+import Navbar from "../components/Nav";
+const professional_network = () => {
   return (
     <Main>
-      <Container1>
+      <Navbar />
+      <Container>
         <ImgContainer>
           <Image
             src="/Images/Image_1.png"
@@ -15,17 +18,15 @@ const HomepageContainer1 = () => {
           />
         </ImgContainer>
         <TextContainer>
-          <Header>Join Miami's leading tech student community</Header>
+          <Header>Professional Network</Header>
           <Text>
-            Providing students of all academic backgrounds and skill levels with
-            opportunities to develope technecally and professionally
+            We'd like to show our congratulations to any member of our
+            Organisation that managed to earn an internship or full-time
+            opportunity during their college careers.
           </Text>
-          <ButtonContainer>
-            <Button>Events</Button>
-            <Button>Discord</Button>
-          </ButtonContainer>
+          <Button>Join the Network</Button>
         </TextContainer>
-      </Container1>
+      </Container>
       <svg
         viewBox="0 0 500 150"
         preserveAspectRatio="none"
@@ -43,11 +44,13 @@ const HomepageContainer1 = () => {
           style={{ stroke: "none", fill: "url('#myGradient')" }}
         ></path>
       </svg>
+      <Network />
+      <Footer />
     </Main>
   );
 };
 
-export default HomepageContainer1;
+export default professional_network;
 
 const Main = styled.div`
   display: flex;
@@ -55,7 +58,7 @@ const Main = styled.div`
   justify-content: center;
   padding: 0px;
 `;
-const Container1 = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
@@ -78,12 +81,14 @@ const TextContainer = styled.div`
   height: 500px;
   background: transparent;
   justify-content: center;
+  align-items: center;
 `;
 const Header = styled.h1`
   color: white;
   font-weight: 900;
   height: "50px";
   font-family: "Poppins", sans-serif;
+  margin: 21px 0 10px 0;
   text-transform: none;
   text-align: center;
 `;
@@ -93,12 +98,7 @@ const ImgContainer = styled.div`
   padding: 20px;
   background: transparent;
 `;
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 30px 0 0 0;
-  gap: 40px;
-`;
+
 const Button = styled.button`
   border-radius: 60px;
   font-family: ‘Poppins’, sans-serif;
@@ -106,19 +106,21 @@ const Button = styled.button`
   font-weight: 900;
   font-size: 26px;
   background: white;
-  padding: 10px 37px 10px 37px;
+  padding: 10px 0 10px 0;
   text-decoration: none;
   border: none;
+  width: 20rem;
 `;
 const Text = styled.p`
   background: transparent;
   margin: 15px 0 10px 0;
   font-family: "Poppins", sans-serif;
-  font-weight: thin;
+  font-weight: 100;
   font-size: 18px;
   text-align: center;
   line-height: 2rem;
   color: white;
   display: block;
-  margin: 0 2em 0 2em;
+  margin: 0;
+  padding: 0 2rem 1.8rem 2rem;
 `;

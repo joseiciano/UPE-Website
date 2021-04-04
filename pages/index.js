@@ -5,6 +5,8 @@ import styles from "../styles/Home.module.css";
 import Nav from "../components/Nav";
 import HomepageContainer1 from "../components/HomepageContainer1";
 import Advance from "./advance";
+import Footer from "../components/Footer";
+import Network from "../components/Network";
 
 export default function Home() {
   return (
@@ -12,15 +14,17 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins"
+        />
       </Head>
 
-      <Nav stcolor={"rgba(254, 254, 0)"} ndcolor={"rgba(255, 151, 0)"} />
+      <Nav/>
       <HomepageContainer1 />
-
       <Benefits></Benefits>
       <UpcomingEvents ndcolor={"#F7981D"} temp="rgba(255, 151, 0, 0.85)"></UpcomingEvents>
-      
+      <Footer />
       <Advance></Advance>
     </div>
   );
