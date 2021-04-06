@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+
 const Network = () => {
   return (
     <Main>
@@ -135,6 +136,7 @@ const Network = () => {
 };
 
 export default Network;
+
 const Main = styled.div`
   display: flex;
   justify-content: space-around;

@@ -6,13 +6,20 @@ const HomepageContainer1 = () => {
     <Main>
       <Container1>
         <ImgContainer>
-          <Image
+          <img
+            className="image"
+            src="/Images/Image_1.png"
+            width="500"
+            height="500"
+            style={{ background: "transparent", margin: "50px 0 0 0" }}
+          ></img>
+          {/* <Image
             src="/Images/Image_1.png"
             alt="Image_1"
             width={500}
             height={500}
             style={{ background: "transparent", margin: "50px 0 0 0" }}
-          />
+          /> */}
         </ImgContainer>
         <TextContainer>
           <Header>Join Miami's leading tech student community</Header>

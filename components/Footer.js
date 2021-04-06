@@ -1,15 +1,8 @@
 import styled, { css } from "styled-components";
 import { TiSocialInstagram } from "react-icons/ti";
-import {
-  RiDiscordLine,
-  RiFacebookBoxLine,
-  RiMessage2Fill,
-} from "react-icons/ri";
-import {
-  AiOutlineLinkedin,
-  AiFillPhone,
-  AiFillTwitterSquare,
-} from "react-icons/ai";
+import { RiDiscordLine, RiFacebookBoxLine, RiMessage2Fill } from "react-icons/ri";
+import { AiOutlineLinkedin, AiFillPhone, AiFillTwitterSquare } from "react-icons/ai";
+
 const Footer = () => {
   return (
     <Main>
@@ -34,9 +27,7 @@ const Footer = () => {
         <Header>Join The Community!</Header>
         <IconContainer>
           <Icon>
-            <RiDiscordLine
-              style={{ color: "white", height: "130%", width: "130%" }}
-            />
+            <RiDiscordLine style={{ color: "white", height: "130%", width: "130%" }} />
           </Icon>
           <Icon>
             <RiFacebookBoxLine

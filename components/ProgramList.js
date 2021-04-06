@@ -1,7 +1,6 @@
 import styles from "../styles/Programs.module.css";
 import styled from "styled-components";
 
-
 const Button = styled.button``;
 
 const ProgramList = () => {
@@ -57,8 +56,7 @@ const ProgramList = () => {
           <img className={styles.code} src="images/InfoTech-1030x215.png" />
           <div className={styles.container}>
             <h4 className={styles.codeInfo}>
-              Dive into networking, linux, cloud computing, cyber security and
-              more!
+              Dive into networking, linux, cloud computing, cyber security and more!
             </h4>
             <Button className={styles.infoButton}>Learn More</Button>
           </div>
@@ -72,8 +70,7 @@ const ProgramList = () => {
           <img className={styles.code} src="images/Advance-1030x215.png" />
           <div className={styles.container}>
             <h4 className={styles.codeInfo}>
-              Prepare for a career in technology through professional
-              development
+              Prepare for a career in technology through professional development
             </h4>
             <Button className={styles.advanceButton}>Learn More</Button>
           </div>
@@ -129,8 +126,7 @@ const ProgramList = () => {
           <img className={styles.code} src="images/Hackers-1030x216.png" />
           <div className={styles.container}>
             <h4 className={styles.codeInfo}>
-              Participate in hackathons across the state and show off your
-              skills
+              Participate in hackathons across the state and show off your skills
             </h4>
             <Button className={styles.hackersButton}>Learn More</Button>
           </div>
