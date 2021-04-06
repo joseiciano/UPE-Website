@@ -31,11 +31,12 @@ const Header = styled.h1`
  color: #F7981D;
  font-weight: 900;
  font-size: 34px;
+ font-family: ‘Poppins’, sans-serif;
 `;
 
 const Text = styled.p`
   font-weight: 400;
-  margin-left:0.7rem;
+  margin-left: 50px;
   font-size: 20px;
 `;
 
