@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Name from '../components/Name'
+import About from '../components/About'
 export default function Home() {
   return (
-    <div><Name/></div>
+    <div><About/></div>
   )
 }
