@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import Benefits from "../components/Benefits";
 import UpcomingEvents from "../components/UpcomingEvents";
@@ -7,6 +8,8 @@ import HomepageContainer1 from "../components/HomepageContainer1";
 import Advance from "./advance";
 import Footer from "../components/Footer";
 import Network from "../components/Network";
+
+import About from '../components/About'
 
 export default function Home() {
   return (
@@ -22,6 +25,7 @@ export default function Home() {
 
       <Nav/>
       <HomepageContainer1 />
+      <div><About/></div>
       <Benefits></Benefits>
       <UpcomingEvents ndcolor={"#F7981D"} temp="rgba(255, 151, 0, 0.85)"></UpcomingEvents>
       <Footer />
