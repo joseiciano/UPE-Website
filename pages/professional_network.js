@@ -3,6 +3,7 @@ import Image from "next/image";
 import Network from "../components/Network";
 import Footer from "../components/Footer";
 import Navbar from "../components/Nav";
+
 const professional_network = () => {
   return (
     <Main>
@@ -20,9 +21,9 @@ const professional_network = () => {
         <TextContainer>
           <Header>Professional Network</Header>
           <Text>
-            We'd like to show our congratulations to any member of our
-            Organisation that managed to earn an internship or full-time
-            opportunity during their college careers.
+            We'd like to show our congratulations to any member of our Organisation that
+            managed to earn an internship or full-time opportunity during their college
+            careers.
           </Text>
           <Button>Join the Network</Button>
         </TextContainer>
