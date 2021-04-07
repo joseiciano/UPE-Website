@@ -1,17 +1,20 @@
 import styled from "styled-components";
 import Image from "next/image";
+const Image_width = 280;
+const Image_height = 60;
 const Network = () => {
   return (
     <Main>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-          style={{ background: "transparent" }}
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -19,13 +22,15 @@ const Network = () => {
         <Name> Last Name, First Name </Name>
       </Container>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -33,13 +38,15 @@ const Network = () => {
         <Name> Last Name, First Name </Name>
       </Container>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -47,13 +54,15 @@ const Network = () => {
         <Name> Last Name, First Name </Name>
       </Container>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -61,13 +70,15 @@ const Network = () => {
         <Name> Last Name, First Name </Name>
       </Container>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -75,13 +86,15 @@ const Network = () => {
         <Name> Last Name, First Name </Name>
       </Container>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -89,13 +102,15 @@ const Network = () => {
         <Name> Last Name, First Name </Name>
       </Container>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -103,13 +118,15 @@ const Network = () => {
         <Name> Last Name, First Name </Name>
       </Container>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -117,13 +134,15 @@ const Network = () => {
         <Name> Last Name, First Name </Name>
       </Container>
       <Container>
-        <Image
-          src="/Images/Microsoft.png"
-          alt="company logo"
-          width={150}
-          height={80}
-          layout="intrinsic"
-        />
+        <a href="https://www.microsoft.com/en-us/">
+          <Image
+            src="/Images/Microsoft.png"
+            alt="company logo"
+            width={Image_width}
+            height={Image_height}
+          />
+        </a>
+
         <Header> Microsoft</Header>
         <Name> Last Name, First Name </Name>
         <Name> Last Name, First Name </Name>
@@ -144,16 +163,16 @@ const Main = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 30%;
 `;
 const Name = styled.h4`
   font-family: "Poppins", sans-serif;
-  text-align: left;
   font-weight: 300;
   margin: 0.2rem 0 0.2rem 0;
 `;
 const Header = styled.h3`
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  margin: 0.5rem 0 0.2rem 5%;
+  margin: 0.5rem 0 0.2rem 0;
 `;

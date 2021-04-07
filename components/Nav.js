@@ -5,18 +5,21 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Nav>
-      <Image src="/Images/UPE_Logo.png" alt="UPE Logo" />
+      <MenuLink href="/">
+        <Image src="/Images/UPE_Logo.png" alt="UPE Logo" />
+      </MenuLink>
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <span />
         <span />
         <span />
       </Hamburger>
       <Menu isOpen={isOpen}>
-        <MenuLink href="">Home</MenuLink>
-        <MenuLink href="">Calender</MenuLink>
-        <MenuLink href="">About us</MenuLink>
-        <MenuLink href="">Membership</MenuLink>
-        <MenuLink href="">Induction</MenuLink>
+        <MenuLink href="/">Home</MenuLink>
+        <MenuLink href="/">Calender</MenuLink>
+        <MenuLink href="/">About us</MenuLink>
+        <MenuLink href="/">Membership</MenuLink>
+        <MenuLink href="/">Induction</MenuLink>
+        <MenuLink href="professional_network">Network</MenuLink>
       </Menu>
     </Nav>
   );
@@ -25,7 +28,7 @@ const Navbar = () => {
 export default Navbar;
 
 const MenuLink = styled.a`
-  padding: 1rem;
+  padding: 0 1rem;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -38,7 +41,7 @@ const MenuLink = styled.a`
 `;
 
 const Nav = styled.div`
-  padding: 0 2rem;
+  padding: 0 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +65,7 @@ const Menu = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
-  @media (max-width: 1162px) {
+  @media (max-width: 1254px) {
     overflow: hidden;
     flex-direction: column;
     max-height: ${({ isOpen }) => (isOpen ? "300px" : "0")};
@@ -82,10 +85,10 @@ const Hamburger = styled.div`
     margin-bottom: 4px;
     border-radius: 5px;
   }
-  @media (max-width: 1162px) {
+  @media (max-width: 1254px) {
     display: flex;
   }
 `;
 const Image = styled.img`
-  padding: 1rem 1rem;
+   padding: 0.5rem 0.5rem;
 `;

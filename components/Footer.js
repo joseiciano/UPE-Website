@@ -33,41 +33,62 @@ const Footer = () => {
       <Container>
         <Header>Join The Community!</Header>
         <IconContainer>
-          <Icon>
-            <RiDiscordLine
-              style={{ color: "white", height: "130%", width: "130%" }}
-            />
-          </Icon>
-          <Icon>
-            <RiFacebookBoxLine
-              style={{ color: "white", height: "130%", width: "130%" }}
-            />
-          </Icon>
-          <Icon>
-            <TiSocialInstagram
-              style={{ color: "white", height: "130%", width: "130%" }}
-            />
-          </Icon>
-          <Icon>
-            <AiFillTwitterSquare
-              style={{ color: "white", height: "130%", width: "130%" }}
-            />
-          </Icon>
-          <Icon>
-            <AiOutlineLinkedin
-              style={{ color: "white", height: "130%", width: "130%" }}
-            />
-          </Icon>
+          <a href="https://discord.com/invite/upefiu">
+            <Icon>
+              <RiDiscordLine
+                style={{ color: "white", height: "130%", width: "130%" }}
+              />
+            </Icon>
+          </a>
+          <a href="">
+            <Icon>
+              <RiFacebookBoxLine
+                style={{ color: "white", height: "130%", width: "130%" }}
+              />
+            </Icon>
+          </a>
+
+          <a href="https://www.instagram.com/upefiu/?hl=en">
+            <Icon>
+              <TiSocialInstagram
+                style={{ color: "white", height: "130%", width: "130%" }}
+              />
+            </Icon>
+          </a>
+
+          <a href="">
+            <Icon>
+              <AiFillTwitterSquare
+                style={{ color: "white", height: "130%", width: "130%" }}
+              />
+            </Icon>
+          </a>
+
+          <a href="https://www.linkedin.com/company/upe-fiu/">
+            <Icon>
+              <AiOutlineLinkedin
+                style={{ color: "white", height: "130%", width: "130%" }}
+              />
+            </Icon>
+          </a>
         </IconContainer>
         <Bottom>
           <Header Bottom>@Copyright - Uplison Pi Eplison at FIU </Header>
+          <Credits>
+            Made by SparkDev 2021: Ngang Bah, Ha Ho, Freeman Francois, Taylor
+            Gross, Ziad Malik{" "}
+          </Credits>
           <IconContainer>
-            <Icon Bottom>
-              <RiMessage2Fill color={"white"} size={20} />
-            </Icon>
-            <Icon Bottom>
-              <AiFillPhone color={"white"} size={20} />
-            </Icon>
+            <a href="">
+              <Icon Bottom>
+                <RiMessage2Fill color={"white"} size={20} />
+              </Icon>
+            </a>
+            <a href="">
+              <Icon Bottom>
+                <AiFillPhone color={"white"} size={20} />
+              </Icon>
+            </a>
           </IconContainer>
         </Bottom>
       </Container>
@@ -96,6 +117,7 @@ const IconContainer = styled.div`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 80px 0 0 0;
 `;
 const Icon = styled.div`
@@ -116,10 +138,10 @@ const Main = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const Header = styled.h1`
+const Header = styled.h2`
   color: white;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 32px;
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin-bottom: 5px;
@@ -130,4 +152,11 @@ const Header = styled.h1`
       font-size: 13px;
       padding: 1rem 0 1rem 1.5rem;
     `}
+`;
+const Credits = styled.p`
+  font-weight: 100;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
 `;

@@ -21,8 +21,12 @@ const HomepageContainer1 = () => {
             opportunities to develope technecally and professionally
           </Text>
           <ButtonContainer>
-            <Button>Events</Button>
-            <Button>Discord</Button>
+            <a href="https://airtable.com/shrN1GT2AEyAWtMTT">
+              <Button>Events</Button>
+            </a>
+            <a href="https://discord.com/invite/upefiu">
+              <Button>Discord</Button>
+            </a>
           </ButtonContainer>
         </TextContainer>
       </Container1>
