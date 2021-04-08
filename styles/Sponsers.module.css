@@ -1,0 +1,97 @@
+.btn {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+ .container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer img {
+  margin-left: 0.5rem;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponserTitle {
+  font-weight:initial;
+  font-style:oblique;
+  font-size: 4rem;
+  color: #fa853f;
+  text-align: center;
+  line-height: 3.125rem;
+  margin-top:  15rem;
+}
+.sponserMsg {
+  font-size: 2rem;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+  line-height: 5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+.logo {
+  height: 3rem;
+}
+.gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  background-color: white;
+  grid-column-gap: 1.0rem;
+  grid-row-gap: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 15rem;
+}
+.griditem {
+
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+} 

@@ -7,6 +7,7 @@ import HomepageContainer1 from "../components/HomepageContainer1";
 import Footer from "../components/Footer";
 import Network from "../components/Network";
 import ProgramList from "../components/ProgramList";
+import Sponsers from "../components/Sponsers";
 import About from "../components/About";
 
 export default function Home() {
@@ -43,6 +44,7 @@ export default function Home() {
         <ProgramList />
       </div>
       <UpcomingEvents ndcolor={"#F7981D"} temp="rgba(255, 151, 0, 0.85)"></UpcomingEvents>
+      <Sponsers />
       <Footer />
     </div>
   );
