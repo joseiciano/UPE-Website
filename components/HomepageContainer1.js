@@ -11,15 +11,8 @@ const HomepageContainer1 = () => {
             src="/Images/Image_1.png"
             width="500"
             height="500"
-            style={{ background: "transparent", margin: "50px 0 0 0" }}
+            style={{ background: "transparent", margin: "0 0 0 0" }}
           ></img>
-          {/* <Image
-            src="/Images/Image_1.png"
-            alt="Image_1"
-            width={500}
-            height={500}
-            style={{ background: "transparent", margin: "50px 0 0 0" }}
-          /> */}
         </ImgContainer>
         <TextContainer>
           <Header>Join Miami's leading tech student community</Header>
@@ -62,6 +55,7 @@ const Main = styled.div`
   justify-content: center;
   padding: 0px;
 `;
+
 const Container1 = styled.div`
   display: flex;
   flex-direction: row;
@@ -77,6 +71,7 @@ const Container1 = styled.div`
   align-item: baseline;
   padding: 50px 0px 60px 0;
 `;
+
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -86,6 +81,7 @@ const TextContainer = styled.div`
   background: transparent;
   justify-content: center;
 `;
+
 const Header = styled.h1`
   color: white;
   font-weight: 900;
@@ -94,18 +90,21 @@ const Header = styled.h1`
   text-transform: none;
   text-align: center;
 `;
+
 const ImgContainer = styled.div`
   width: auto;
   height: auto;
   padding: 20px;
   background: transparent;
 `;
+
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 30px 0 0 0;
   gap: 40px;
 `;
+
 const Button = styled.button`
   border-radius: 60px;
   font-family: ‘Poppins’, sans-serif;
@@ -117,6 +116,7 @@ const Button = styled.button`
   text-decoration: none;
   border: none;
 `;
+
 const Text = styled.p`
   background: transparent;
   margin: 15px 0 10px 0;

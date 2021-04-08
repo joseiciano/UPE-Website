@@ -101,6 +101,7 @@ const NetworkButton = styled.button`
     rgba(248, 155, 33, 1) 100%
   );
 `;
+
 const GalleryButton = styled.button`
   cursor: pointer;
   border: none;
